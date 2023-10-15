@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-MassTransitDemo.PaymentService-071e7a77-d0c1-43cf-9594-59c07e716fd0</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MassTransitDemo.Application\MassTransitDemo.Application.csproj" />
+    <ProjectReference Include="..\MassTransitDemo.Util\MassTransitDemo.Util.csproj" />
+  </ItemGroup>
+</Project>
