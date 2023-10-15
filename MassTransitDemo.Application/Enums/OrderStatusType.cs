@@ -5,7 +5,7 @@
         Created = 0,
         StockValidated = 1,
         PaymentValidate = 2,
-        Finished = 3,
+        Confirmed = 3,
         Closed = 4
     }
 }

@@ -20,8 +20,8 @@ namespace MassTransitDemo.Application.Consumers
             var orderId = _orderRepository.Update(
                 new Entities.Order 
                 { 
-                    FinishedAt = DateTime.Now, 
-                    OrderStatus = Enums.OrderStatusType.Finished, 
+                    ConfirmedAt = DateTime.Now, 
+                    OrderStatus = Enums.OrderStatusType.Confirmed, 
                     Code = context.CorrelationId.Value
                 }).Result;
 

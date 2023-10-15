@@ -13,11 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MassTransitDemo.Application
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MassTransitDemo.Orchestration", "MassTransitDemo.Orchestration\MassTransitDemo.Orchestration.csproj", "{A3EF6C23-3DDE-448E-A1F0-F4AF3FBEB5A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransitDemo.StockService", "MassTransitDemo.StockService\MassTransitDemo.StockService.csproj", "{7DF90234-B98B-416C-B0CB-9C66890CEA35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MassTransitDemo.StockService", "MassTransitDemo.StockService\MassTransitDemo.StockService.csproj", "{7DF90234-B98B-416C-B0CB-9C66890CEA35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransitDemo.PaymentService", "MassTransitDemo.PaymentService\MassTransitDemo.PaymentService.csproj", "{BEFF688E-2400-4510-86F0-A57E6374A3D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MassTransitDemo.PaymentService", "MassTransitDemo.PaymentService\MassTransitDemo.PaymentService.csproj", "{BEFF688E-2400-4510-86F0-A57E6374A3D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransitDemo.FinishOrderService", "MassTransitDemo.FinishOrderService\MassTransitDemo.FinishOrderService.csproj", "{9FEA9E52-DCDC-4533-ABB3-CDFEE4E23D05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MassTransitDemo.FinishOrderService", "MassTransitDemo.FinishOrderService\MassTransitDemo.FinishOrderService.csproj", "{9FEA9E52-DCDC-4533-ABB3-CDFEE4E23D05}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -19,7 +19,7 @@ OrderStatus,
 CreatedAt,
 StockValidatedAt,
 PaymentValidatedAt,
-FinishedAt,
+ConfirmedAt,
 ClosedAt
 FROM
     dbo.[Order]
@@ -41,7 +41,7 @@ INSERT INTO dbo.[Order]
     CreatedAt,
     StockValidatedAt,
     PaymentValidatedAt,
-    FinishedAt,
+    ConfirmedAt,
     ClosedAt
 )
 OUTPUT INSERTED.[Id]
@@ -53,7 +53,7 @@ VALUES
     @CreatedAt,
     @StockValidatedAt,
     @PaymentValidatedAt,
-    @FinishedAt,
+    @ConfirmedAt,
     @ClosedAt
 )
 ";
@@ -126,9 +126,9 @@ VALUES
                 builder.Set("PaymentValidatedAt = @PaymentValidatedAt", new { order.PaymentValidatedAt });
             }
 
-            if (order.FinishedAt.HasValue)
+            if (order.ConfirmedAt.HasValue)
             {
-                builder.Set("FinishedAt = @FinishedAt", new { order.FinishedAt });
+                builder.Set("ConfirmedAt = @ConfirmedAt", new { order.ConfirmedAt });
             }
 
             if (order.ClosedAt.HasValue)

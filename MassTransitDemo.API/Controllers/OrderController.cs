@@ -24,7 +24,7 @@ namespace MassTransitDemo.API.Controllers
         [HttpPost] 
         public async Task<IActionResult> Post(long productId)
         {
-            await _publishEndpoint.Publish<OrderInitializingEvent>(new { code = Guid.NewGuid(), productId });;
+            await _publishEndpoint.Publish<OrderInitializingEvent>(new { code = Guid.NewGuid(), productId });
             return new NoContentResult();
         }
 

@@ -36,6 +36,7 @@ namespace MassTransitDemo.Orchestration
                             });
 
                             cfg.ConfigureEndpoints(context);
+                            cfg.PrefetchCount = 1;
                         });
                     });
                 })

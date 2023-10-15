@@ -25,6 +25,7 @@ namespace MassTransitDemo.PaymentService
                             });
 
                             cfg.ConfigureEndpoints(context);
+                            cfg.PrefetchCount = 1;
                         });
 
                         x.AddConsumer<PaymentValidatingEventConsumer>();

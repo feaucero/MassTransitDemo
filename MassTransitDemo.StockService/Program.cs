@@ -25,6 +25,7 @@ namespace MassTransitDemo.StockService
                             });
 
                             cfg.ConfigureEndpoints(context);
+                            cfg.PrefetchCount = 1;
                         });
 
                         x.AddConsumer<StockValidatingEventConsumer>();

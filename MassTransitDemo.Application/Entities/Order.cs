@@ -10,7 +10,7 @@ namespace MassTransitDemo.Application.Entities
         public DateTime? CreatedAt { get; set; }
         public DateTime? StockValidatedAt { get; set; }
         public DateTime? PaymentValidatedAt { get; set; }
-        public DateTime? FinishedAt { get; set; }
+        public DateTime? ConfirmedAt { get; set; }
         public DateTime? ClosedAt { get; set; }
         public long ProductId { get; set; }
     }

@@ -8,7 +8,7 @@ BEGIN
         CreatedAt DATETIME NULL,
         StockValidatedAt DATETIME NULL,
         PaymentValidatedAt DATETIME NULL,
-        FinishedAt DATETIME NULL,
+        ConfirmedAt DATETIME NULL,
         ClosedAt DATETIME NULL,
         CONSTRAINT operationType_PK PRIMARY KEY (Id)
     );

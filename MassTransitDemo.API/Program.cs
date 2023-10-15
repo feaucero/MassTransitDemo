@@ -30,6 +30,7 @@ namespace MassTransitDemo.API
                     });
 
                     cfg.ConfigureEndpoints(context);
+                    cfg.PrefetchCount = 1;
                 });
 
                 x.AddConsumer<OrderInitializingEventConsumer>();

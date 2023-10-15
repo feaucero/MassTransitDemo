@@ -25,6 +25,7 @@ namespace MassTransitDemo.FinishOrderService
                             });
 
                             cfg.ConfigureEndpoints(context);
+                            cfg.PrefetchCount = 1;
                         });
 
                         x.AddConsumer<OrderFinalizatingEventConsumer>();
