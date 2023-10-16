@@ -24,11 +24,6 @@ namespace MassTransitDemo.Application.Consumers
                     ProductId = context.Message.ProductId,
                     Code = context.CorrelationId.Value}).Result;
 
-            //context.RespondAsync(new OrderProcessInitiazationDto
-            //{
-            //    OrderId = context.Message.OrderId
-            //});
-
             return Task.CompletedTask;
         }
     }

@@ -27,11 +27,6 @@ namespace MassTransitDemo.Application.Consumers
 
             Console.WriteLine($"Pagamento validado para o pedido {context.CorrelationId.Value}");
 
-            //context.RespondAsync(new OrderProcessInitiazationDto
-            //{
-            //    OrderId = context.Message.OrderId
-            //});
-
             return Task.CompletedTask;
         }
     }

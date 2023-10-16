@@ -101,35 +101,7 @@ namespace MassTransitDemo.Orchestration
             During(Final,
                 When(OrderFinishedEvent)
                     .Then(context => { Console.WriteLine($"5 - During Final When OrderFinishedEvent para {context.Saga.CorrelationId} "); })
-                    .Then(x => x.Saga.ProductId = x.Message.ProductId)
-                    .Finalize());
-
-
-            //During(Initial,
-            //    When(OrderInitializingEvent)
-            //        .Then(x => x.Saga.OrderStartDate = DateTime.Now)
-            //        .Then(x => x.Saga.ProductId = x.Message.ProductId)
-            //        .Publish(context => new StockValidatingEvent { Code = context.Saga.CorrelationId, ProductId = context.Message.ProductId })
-            //        .TransitionTo(OrderInitializedState));
-
-            //During(OrderInitializedState,
-            //    When(StockValidatingEvent)
-            //        .Then(x => x.Saga.ProductId = x.Message.ProductId)
-            //        .Publish(context => new PaymentValidatingEvent { Code = context.Saga.CorrelationId, ProductId = context.Message.ProductId })
-            //        .TransitionTo(StockValidatedState));
-
-            //During(StockValidatedState,
-            //    When(PaymentValidatingEvent)
-            //        .Then(x => x.Saga.ProductId = x.Message.ProductId)
-            //        .Publish(context => new OrderFinalizatingEvent { Code = context.Saga.CorrelationId, ProductId = context.Message.ProductId })
-            //        .TransitionTo(PaymentValidatedState));
-
-            //During(PaymentValidatedState,
-            //    When(OrderFinalizatingEvent)
-            //        .Then(x => x.Saga.ProductId = x.Message.ProductId)
-            //        .Send(context => new OrderFinishedEvent { Code = context.Saga.CorrelationId, ProductId = context.Message.ProductId })
-            //        .TransitionTo(OrderFinishedState));
-
+                    .Then(x => x.Saga.ProductId = x.Message.ProductId));
 
 
             DuringAny(When(OrderInitializingFaultEvent)

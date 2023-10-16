@@ -25,11 +25,6 @@ namespace MassTransitDemo.Application.Consumers
 
             Console.WriteLine($"Pedido {context.CorrelationId.Value} fechado");
 
-            //context.RespondAsync(new OrderProcessInitiazationDto
-            //{
-            //    OrderId = context.Message.OrderId
-            //});
-
             return Task.CompletedTask;
         }
     }
